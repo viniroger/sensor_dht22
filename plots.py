@@ -9,8 +9,8 @@ import matplotlib.dates as mdates
 # Get dataframe from CSV file
 filename = 'data.csv'
 df = pd.read_csv(filename)
-print('Temperature\n max: {0}°C min: {1}°C'.format(min(df.temperature), max(df.temperature)))
-print('Humidity\n max: {0}% min: {1}%'.format(min(df.humidity), max(df.humidity)))
+print('Temperature\n min: {0}°C max: {1}°C'.format(min(df.temperature), max(df.temperature)))
+print('Humidity\n min: {0}% max: {1}%'.format(min(df.humidity), max(df.humidity)))
 
 # Convert into datetime format
 x_orig = df.timestamp
